@@ -42,7 +42,7 @@ public class App {
         }
 
         int result = stack.pop();
-        if (result != Stack.NO_ENTRY && stack.top == 0) {
+        if (result != Stack.NO_ENTRY && stack.top == Stack.NO_ENTRY) {
             terminal.println("Result: " + result);
         } else {
             terminal.println("Rejected. Stack contains more than a single number at end of word.");
